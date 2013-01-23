@@ -14,7 +14,7 @@ in which server a key resides)
 ```
 
 ### default: hash ring based redis cluster
-The default cluster uses a [hash ring][http://github.com/3rd-Eden/node-hashring.git] to disribute keys
+The default cluster uses a [hash ring](http://github.com/3rd-Eden/node-hashring.git) to disribute keys
 among its nodes
 ```
 var RedisCluster = require('node-redis-cluster');
