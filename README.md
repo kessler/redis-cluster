@@ -1,10 +1,17 @@
 RedisCluster
 ============
 
+NOTICE: This project is still super alpha!
+
 A redis cluster with pluggable redis client factory and key mapper / load balancer.
 
 The execMany function requires that the key mapper will be consistent (i.e it should know 
 in which server a key resides)
+
+### install
+```
+	npm install redis-cluster
+```
 
 ### default: hash ring based redis cluster
 ```

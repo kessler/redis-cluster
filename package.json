@@ -1,8 +1,24 @@
 {
     "name": "redis-cluster",
-    "version": "0.0.1",
-    "description": "a hashring based redis cluster",
+    "version": "0.0.8",
+    "description": "a redis cluster",
     "main": "lib/index.js",
+    "author": {
+        "name": "Yaniv Kessler"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/yanush/redis-cluster.git"
+    },
+    "bugs": {
+        "url": "http://github.com/yanush/redis-cluster/issues"
+    },
+    "licenses": [
+        {
+        "type": "MIT",
+        "url": "http://github.com/yanush/redis-cluster/raw/master/LICENSE"
+        }
+    ],
     "dependencies": {        
     	"async": "*",
     	"redis": "*",
