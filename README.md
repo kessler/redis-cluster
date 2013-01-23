@@ -41,7 +41,6 @@ var servers = [
 	{ port: 6379, host: '10.0.0.3' },
 ];
 
-
 function RedisFactory() {
 	
 }
@@ -53,7 +52,7 @@ RedisFactory.prototype.createClient(port, host) {
 
 function CustomKeyMapper() {
 	this.servers = [];	
-};
+}
 
 CustomKeyMapper.prototype.addServer = function(serverKey) {
 	this.server.push(serverKey);
