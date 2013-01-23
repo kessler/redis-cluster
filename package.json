@@ -1,0 +1,17 @@
+{
+    "name": "redis-cluster",
+    "version": "0.0.1",
+    "description": "a hashring based redis cluster",
+    "main": "lib/index.js",
+    "dependencies": {        
+    	"async": "*",
+    	"redis": "*",
+        "hashring": "*"
+    },
+    "devDependencies": {
+        "vows": "*"
+    },
+    "engine": {
+        "node": ">=0.8"
+    }
+}
