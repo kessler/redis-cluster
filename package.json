@@ -16,7 +16,7 @@
     "licenses": [
         {
         "type": "MIT",
-        "url": "http://github.com/yanush/redis-cluster/raw/master/LICENSE"
+        "url": "https://raw.github.com/yanush/redis-cluster/master/LICENSE"
         }
     ],
     "dependencies": {        
