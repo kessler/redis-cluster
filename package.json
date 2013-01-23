@@ -1,6 +1,6 @@
 {
     "name": "node-redis-cluster",
-    "version": "0.0.9",
+    "version": "0.1.0",
     "description": "a redis cluster abstraction over node-redis",
     "main": "lib/index.js",
     "author": {

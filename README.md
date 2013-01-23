@@ -17,7 +17,7 @@ in which server a key resides)
 The default cluster uses a [hash ring](http://github.com/3rd-Eden/node-hashring.git) to disribute keys
 among its nodes
 ```
-var RedisCluster = require('node-redis-cluster');
+var RedisCluster = require('node-redis-cluster').RedisCluster;
 
 var rcluster = RedisCluster.create([
 	{ port: 6379, host: '10.0.0.1' },
@@ -61,7 +61,7 @@ rcluster.execAll('keys', ['*'], function(err, results) {
 ```
 
 var redis = require('redis');
-var RedisCluster = require('node-redis-cluster');
+var RedisCluster = require('node-redis-cluster').RedisCluster;
 
 var servers = [
 	{ port: 6379, host: '10.0.0.1' },
