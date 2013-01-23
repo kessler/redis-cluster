@@ -27,9 +27,13 @@ rcluster.execMany('get', ['somekey1', 'somekey2', 'somekey3', 'somekey4'], funct
 	// results is { somekey1: 'somevalue', somekey2: 'somevalue', somekey3: 'somevalue', somekey4: 'somevalue' }
 });
 
+rcluster.execAll('keys', ['*'], function(err, results) {
+	// results is now { '10.0.0.1:6379': [ // keys], '10.0.0.2:6379': [ // keys], '10.0.0.3:6379': [ // keys]}
+});
+
 ```
 
-### customizing cluster behaviour
+### customizing cluster behavior
 ```
 
 var redis = require('redis');
