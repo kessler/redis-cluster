@@ -14,8 +14,10 @@ in which server a key resides)
 ```
 
 ### default: hash ring based redis cluster
+The default cluster uses a [hash ring][http://github.com/3rd-Eden/node-hashring.git] to disribute keys
+among its nodes
 ```
-var RedisCluster = require('redis-cluster');
+var RedisCluster = require('node-redis-cluster');
 
 var rcluster = RedisCluster.create([
 	{ port: 6379, host: '10.0.0.1' },
@@ -95,3 +97,10 @@ CustomKeyMapper.prototype.getNode = function(key) {
 var customCluster = new RedisCluster(servers, new RedisFactory(), new CustomKeyMapper());
 
 ```
+
+### command line interface
+A very simple cli is provided as well, to start it run from lib directory
+```
+node cluster-cli
+```
+
