@@ -24,11 +24,24 @@ rcluster.exec('get', ['somekey'], function(err, reply) {
 });
 
 rcluster.execMany('get', ['somekey1', 'somekey2', 'somekey3', 'somekey4'], function(err, results) {
-	// results is { somekey1: 'somevalue', somekey2: 'somevalue', somekey3: 'somevalue', somekey4: 'somevalue' }
+	/* results will be
+		{ 
+			somekey1: 'somevalue', 
+			somekey2: 'somevalue', 
+			somekey3: 'somevalue', 
+			somekey4: 'somevalue' 
+		}
+	*/
 });
 
 rcluster.execAll('keys', ['*'], function(err, results) {
-	// results is now { '10.0.0.1:6379': [ // keys], '10.0.0.2:6379': [ // keys], '10.0.0.3:6379': [ // keys]}
+	/* results will be
+		{ 
+			'10.0.0.1:6379': [ // keys], 
+			'10.0.0.2:6379': [ // keys], 
+			'10.0.0.3:6379': [ // keys]
+		}
+	*/
 });
 
 ```
