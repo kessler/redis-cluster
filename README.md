@@ -1,8 +1,10 @@
 RedisCluster
 ============
 
-An alpha redis cluster. This lib should probably be called consistent redis cluster, since its designed
-to only work with a consistent key distribution among nodes.
+A redis cluster with pluggable redis client factory and key mapper / load balancer.
+
+The execMany function requires that the key mapper will be consistent (i.e it should know 
+in which server a key resides)
 
 ### default: hash ring based redis cluster
 ```
