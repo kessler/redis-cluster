@@ -61,7 +61,7 @@ rcluster.execAll('keys', ['*'], function(err, results) {
 ```
 
 var redis = require('redis');
-var RedisCluster = require('redis-cluster');
+var RedisCluster = require('node-redis-cluster');
 
 var servers = [
 	{ port: 6379, host: '10.0.0.1' },
