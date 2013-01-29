@@ -1,8 +1,9 @@
 {
     "name": "node-redis-cluster",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "a redis cluster abstraction over node-redis",
     "main": "lib/index.js",
+    "keywords": ["redis", "cluster"],
     "author": {
         "name": "Yaniv Kessler"
     },

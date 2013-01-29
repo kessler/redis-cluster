@@ -99,8 +99,17 @@ var customCluster = new RedisCluster(servers, new RedisFactory(), new CustomKeyM
 ```
 
 ### command line interface
-A very simple cli is provided as well, to start it run from lib directory
+A very simple cli is provided as well, to start it:
 ```
-node cluster-cli
+var Cli = require('node-redis-cluster').Cli;
+
+Cli.start(function(context) {
+	context.rcluster.addServer('your.host');
+	context.rcluster.addServer('your.host2', 6379);
+});
+```
+or simply:
+```
+node lib/cluster-cli.js
 ```
 
