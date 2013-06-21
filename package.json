@@ -1,6 +1,6 @@
 {
     "name": "node-redis-cluster",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "a redis cluster abstraction over node-redis",
     "main": "lib/index.js",
     "keywords": ["redis", "cluster"],
@@ -9,15 +9,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "http://github.com/yanush/redis-cluster.git"
+        "url": "http://github.com/kessler-y/redis-cluster.git"
     },
     "bugs": {
-        "url": "http://github.com/yanush/redis-cluster/issues"
+        "url": "http://github.com/kessler-y/redis-cluster/issues"
     },
     "licenses": [
         {
         "type": "MIT",
-        "url": "https://raw.github.com/yanush/redis-cluster/master/LICENSE"
+        "url": "https://raw.github.com/kessler-y/redis-cluster/master/LICENSE"
         }
     ],
     "dependencies": {        
