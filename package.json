@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/kessler-y/redis-cluster.git"
+    "url": "http://github.com/kessler/redis-cluster.git"
   },
   "bugs": {
-    "url": "http://github.com/kessler-y/redis-cluster/issues"
+    "url": "http://github.com/kessler/redis-cluster/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://raw.github.com/kessler-y/redis-cluster/master/LICENSE"
+      "url": "https://raw.github.com/kessler/redis-cluster/master/LICENSE"
     }
   ],
   "dependencies": {
