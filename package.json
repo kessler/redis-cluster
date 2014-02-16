@@ -1,34 +1,37 @@
 {
-    "name": "node-redis-cluster",
-    "version": "0.1.4",
-    "description": "a redis cluster abstraction over node-redis",
-    "main": "lib/index.js",
-    "keywords": ["redis", "cluster"],
-    "author": {
-        "name": "Yaniv Kessler"
-    },
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/kessler-y/redis-cluster.git"
-    },
-    "bugs": {
-        "url": "http://github.com/kessler-y/redis-cluster/issues"
-    },
-    "licenses": [
-        {
-        "type": "MIT",
-        "url": "https://raw.github.com/kessler-y/redis-cluster/master/LICENSE"
-        }
-    ],
-    "dependencies": {        
-    	"async": "*",
-    	"redis": "*",
-        "hashring": "*"
-    },
-    "devDependencies": {
-        "vows": "*"
-    },
-    "engine": {
-        "node": ">=0.8"
+  "name": "node-redis-cluster",
+  "version": "0.1.4",
+  "description": "a redis cluster abstraction over node-redis",
+  "main": "lib/index.js",
+  "keywords": [
+    "redis",
+    "cluster"
+  ],
+  "author": {
+    "name": "Yaniv Kessler"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/kessler-y/redis-cluster.git"
+  },
+  "bugs": {
+    "url": "http://github.com/kessler-y/redis-cluster/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/kessler-y/redis-cluster/master/LICENSE"
     }
+  ],
+  "dependencies": {
+    "async": "~0.2.10",
+    "redis": "~0.10.0",
+    "hashring": "~1.0.3"
+  },
+  "devDependencies": {
+    "vows": "~0.7.0"
+  },
+  "engine": {
+    "node": ">=0.8"
+  }
 }
