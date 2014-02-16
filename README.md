@@ -5,12 +5,12 @@ NOTICE: This project is still super alpha!
 
 A redis cluster with pluggable redis client factory and key mapper / load balancer.
 
-The execMany function requires that the key mapper will be consistent (i.e it should know 
+The execMany function requires that the key mapper will be consistent (i.e it should know
 in which server a key resides)
 
 ### install
 ```
-	npm install redis-cluster
+	npm install node-redis-cluster
 ```
 
 ### default: hash ring based redis cluster
@@ -28,7 +28,7 @@ var rcluster = RedisCluster.create([
 var redis1 = rcluster.getRedis('someKey');
 var redis2 = rcluster.getRedis('someKey');
 
-// redis1 === redis2 
+// redis1 === redis2
 
 rcluster.exec('get', ['somekey'], function(err, reply) {
 	//reply is the value of somekey
@@ -36,20 +36,20 @@ rcluster.exec('get', ['somekey'], function(err, reply) {
 
 rcluster.execMany('get', ['somekey1', 'somekey2', 'somekey3', 'somekey4'], function(err, results) {
 	/* results will be
-		{ 
-			somekey1: 'somevalue', 
-			somekey2: 'somevalue', 
-			somekey3: 'somevalue', 
-			somekey4: 'somevalue' 
+		{
+			somekey1: 'somevalue',
+			somekey2: 'somevalue',
+			somekey3: 'somevalue',
+			somekey4: 'somevalue'
 		}
 	*/
 });
 
 rcluster.execAll('keys', ['*'], function(err, results) {
 	/* results will be
-		{ 
-			'10.0.0.1:6379': [ // keys], 
-			'10.0.0.2:6379': [ // keys], 
+		{
+			'10.0.0.1:6379': [ // keys],
+			'10.0.0.2:6379': [ // keys],
 			'10.0.0.3:6379': [ // keys]
 		}
 	*/
@@ -70,16 +70,16 @@ var servers = [
 ];
 
 function RedisFactory() {
-	
+
 }
 
 RedisFactory.prototype.createClient(port, host) {
-	sendEmailToAdmin(host + ':' + port + ' was added to redis cluster');	
+	sendEmailToAdmin(host + ':' + port + ' was added to redis cluster');
 	return redis.createClient(port, host /* possibly apply any node-redis options */);
 };
 
 function CustomKeyMapper() {
-	this.servers = [];	
+	this.servers = [];
 }
 
 CustomKeyMapper.prototype.addServer = function(serverKey) {
