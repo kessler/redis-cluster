@@ -13,11 +13,11 @@ function MockKeyMapper() {
 	this.servers = [];
 }
 
-MockKeyMapper.prototype.addServer = function(server) {
+MockKeyMapper.prototype.add = function(server) {
 	this.servers.push(server);
 };
 
-MockKeyMapper.prototype.getNode = function(key) {
+MockKeyMapper.prototype.get = function(key) {
 
 	if (key === 'a' || key === 'b' || key === 'c' ) {				
 		return this.servers[0];

@@ -82,11 +82,11 @@ function CustomKeyMapper() {
 	this.servers = [];
 }
 
-CustomKeyMapper.prototype.addServer = function(serverKey) {
+CustomKeyMapper.prototype.add = function(serverKey) {
 	this.server.push(serverKey);
 };
 
-CustomKeyMapper.prototype.getNode = function(key) {
+CustomKeyMapper.prototype.get = function(key) {
 	if (this.servers.length < 2)
 		throw new Error('not enough servers added');
 
@@ -104,8 +104,8 @@ A very simple cli is provided as well, to start it:
 var Cli = require('node-redis-cluster').Cli;
 
 Cli.start(function(context) {
-	context.rcluster.addServer('your.host');
-	context.rcluster.addServer('your.host2', 6379);
+	context.rcluster.add('your.host');
+	context.rcluster.add('your.host2', 6379);
 });
 ```
 or simply:
