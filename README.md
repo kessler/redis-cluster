@@ -1,8 +1,6 @@
 RedisCluster
 ============
 
-WIP.
-
 A redis cluster with pluggable redis client factory and key mapper / load balancer.
 
 The execMany function requires that the key mapper will be consistent (i.e it should know
