@@ -1,7 +1,7 @@
 RedisCluster
 ============
 
-NOTICE: This project is still super alpha!
+WIP.
 
 A redis cluster with pluggable redis client factory and key mapper / load balancer.
 
