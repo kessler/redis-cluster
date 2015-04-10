@@ -1,5 +1,7 @@
-RedisCluster
+[DISCONTINUED] RedisCluster
 ============
+
+The new [native redis cluster](http://redis.io/topics/cluster-spec) is out!!! rejoice!
 
 A redis cluster with pluggable redis client factory and key mapper / load balancer.
 
